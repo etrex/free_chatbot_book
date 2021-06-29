@@ -39,3 +39,6 @@ server is running on 5000 port...
 ```
 
 再將 webhook 設定到 LINE Messaging API 即完成。
+
+
+本章節未完成

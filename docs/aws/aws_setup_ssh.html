@@ -1,0 +1,420 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>設定 AWS EC2 的 SSH 連線 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="aws_install_node.html" />
+    
+    
+    <link rel="prev" href="aws_create_instance.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    教材說明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../heroku.html">
+            
+                <a href="../heroku.html">
+            
+                    
+                    註冊 Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../github.html">
+            
+                <a href="../github.html">
+            
+                    
+                    註冊 GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../line_developer.html">
+            
+                <a href="../line_developer.html">
+            
+                    
+                    註冊 LINE 開發者帳號
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    在 AWS 上執行 Bottender
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="aws_register.html">
+            
+                <a href="aws_register.html">
+            
+                    
+                    註冊 AWS 帳號
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="aws_create_instance.html">
+            
+                <a href="aws_create_instance.html">
+            
+                    
+                    建立 AWS EC2 執行個體
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.3" data-path="aws_setup_ssh.html">
+            
+                <a href="aws_setup_ssh.html">
+            
+                    
+                    設定 AWS EC2 的 SSH 連線
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="aws_install_node.html">
+            
+                <a href="aws_install_node.html">
+            
+                    
+                    在 AWS EC2 上安裝 Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="run_bottender.html">
+            
+                <a href="run_bottender.html">
+            
+                    
+                    在 AWS EC2 上執行 Bottender 範例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >設定 AWS EC2 的 SSH 連線</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8A2D;&#x5B9A;-aws-ec2-&#x7684;-ssh-&#x9023;&#x7DDA;">&#x8A2D;&#x5B9A; AWS EC2 &#x7684; SSH &#x9023;&#x7DDA;</h1>
+<p>ssh &#x6307;&#x4EE4;&#x9700;&#x8981;&#x91D1;&#x9470;&#x3001;&#x7528;&#x6236;&#x540D;&#x7A31;&#x548C; Host &#x4E09;&#x500B;&#x8CC7;&#x8A0A;&#x3002;</p>
+<ul>
+<li>&#x91D1;&#x9470;: &#x5C31;&#x662F;&#x4E0B;&#x8F09;&#x4E0B;&#x4F86;&#x7684; <code>aws.pem</code> &#x6A94;&#x6848;</li>
+<li>&#x7528;&#x6236;&#x540D;&#x7A31;: &#x56FA;&#x5B9A;&#x70BA; <code>ec2-user</code></li>
+<li>Host: &#x5C31;&#x662F;&#x5728; AWS EC2 &#x57F7;&#x884C;&#x500B;&#x9AD4;&#x5167;&#x9801;&#x7684;&#x516C;&#x6709; IPv4 DNS</li>
+</ul>
+<p>&#x9023;&#x7DDA;&#x6307;&#x4EE4;&#x70BA;&#xFF1A;</p>
+<pre><code>ssh -i &#x91D1;&#x9470;&#x6A94;&#x6848;&#x8DEF;&#x5F91; &#x7528;&#x6236;&#x540D;&#x7A31;@Host
+</code></pre><h1 id="&#x53D6;&#x5F97;&#x91D1;&#x9470;">&#x53D6;&#x5F97;&#x91D1;&#x9470;</h1>
+<p>&#x5728;&#x5EFA;&#x7ACB;&#x57F7;&#x884C;&#x500B;&#x9AD4;&#x6642;&#xFF0C;&#x4E0B;&#x8F09;&#x7684; <code>aws.pem</code> &#x6A94;&#x6848;&#x5373;&#x70BA;&#x91D1;&#x9470;&#x3002;</p>
+<h1 id="&#x53D6;&#x5F97;&#x7528;&#x6236;&#x540D;&#x7A31;">&#x53D6;&#x5F97;&#x7528;&#x6236;&#x540D;&#x7A31;</h1>
+<p>&#x5728;<a href="https://docs.aws.amazon.com/zh_tw/AWSEC2/latest/UserGuide/TroubleshootingInstancesConnecting.html" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x4EF6;</a>&#x4E2D;&#x63D0;&#x5230;&#xFF1A;</p>
+<blockquote>
+<p>&#x91DD;&#x5C0D;&#x555F;&#x52D5;&#x57F7;&#x884C;&#x500B;&#x9AD4;&#x7684; AMI&#xFF0C;&#x53D6;&#x5F97;&#x9810;&#x8A2D;&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;&#xFF1A;</p>
+<ul>
+<li>&#x91DD;&#x5C0D; Amazon Linux 2 &#x6216; Amazon Linux AMI&#xFF0C;&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;&#x70BA; ec2-user&#x3002;</li>
+<li>&#x91DD;&#x5C0D; CentOS AMI&#xFF0C;&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;&#x70BA; centos&#x3002;</li>
+<li>&#x91DD;&#x5C0D; Debian AMI&#xFF0C;&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;&#x70BA; admin&#x3002;</li>
+<li>&#x91DD;&#x5C0D; Fedora AMI&#xFF0C;&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;&#x70BA; ec2-user &#x6216; fedora&#x3002;</li>
+<li>&#x91DD;&#x5C0D; RHEL AMI&#xFF0C;&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;&#x70BA; ec2-user &#x6216; root&#x3002;</li>
+<li>&#x91DD;&#x5C0D; SUSE AMI&#xFF0C;&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;&#x70BA; ec2-user &#x6216; root&#x3002;</li>
+<li>&#x91DD;&#x5C0D; Ubuntu AMI&#xFF0C;&#x4F7F;&#x7528;&#x8005;&#x540D;&#x7A31;&#x70BA; ubuntu&#x3002;
+&#x842C;&#x4E00; ec2-user &#x548C; root &#x7121;&#x6CD5;&#x4F7F;&#x7528;&#xFF0C;&#x8ACB;&#x6D3D;&#x8A62; AMI &#x4F9B;&#x61C9;&#x5546;&#x3002;</li>
+</ul>
+</blockquote>
+<h1 id="&#x53D6;&#x5F97;-host">&#x53D6;&#x5F97; Host</h1>
+<p>&#x5728;&#x57F7;&#x884C;&#x500B;&#x9AD4;&#x4E2D;&#x7684;<code>&#x516C;&#x6709; IPv4 DNS</code>&#x8CC7;&#x8A0A;&#x5C31;&#x662F; Host&#x3002;</p>
+<h1 id="&#x9023;&#x7DDA;&#x793A;&#x7BC4;">&#x9023;&#x7DDA;&#x793A;&#x7BC4;</h1>
+<p>&#x4EE5;&#x4E0B;&#x5716;&#x70BA;&#x4F8B;&#xFF1A;</p>
+<p><img src="../images/aws_setup_ssh_de3e58dce23a9b8a4876fbbb6b97dcb5523bffc78eb108cdacd85f27396beb17.png" alt="&#x5716; 20"></p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6211;&#x7684; <code>&#x516C;&#x6709; IPv4 DNS</code> &#x662F; <code>ec2-13-231-194-5.ap-northeast-1.compute.amazonaws.com</code>&#x3002;</p>
+<p>&#x800C;&#x6211;&#x7684;&#x91D1;&#x9470;&#x653E;&#x5728; <code>~/.ssh</code> &#x8CC7;&#x6599;&#x593E;&#x4E0B;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x6211;&#x7684;&#x5B8C;&#x6574;&#x9023;&#x7DDA;&#x8CC7;&#x8A0A;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x91D1;&#x9470;: <code>~/.ssh/aws.pem</code></li>
+<li>&#x7528;&#x6236;&#x540D;&#x7A31;: <code>ec2-user</code></li>
+<li>Host: <code>ec2-13-231-194-5.ap-northeast-1.compute.amazonaws.com</code></li>
+</ul>
+<h2 id="&#x76F4;&#x63A5;&#x9023;&#x7DDA;">&#x76F4;&#x63A5;&#x9023;&#x7DDA;</h2>
+<pre><code class="lang-bash">ssh -i ~/.ssh/aws.pem ec2-user@ec2-13-231-194-5.ap-northeast-1.compute.amazonaws.com
+</code></pre>
+<p>&#x8F38;&#x5165;&#x5F8C;&#x6703;&#x770B;&#x5230;&#xFF1A;</p>
+<pre><code class="lang-bash">The authenticity of host <span class="hljs-string">&apos;ec2-13-231-194-5.ap-northeast-1.compute.amazonaws.com (13.231.194.5)&apos;</span> can<span class="hljs-string">&apos;t be established.
+ECDSA key fingerprint is SHA256:fyGXFib97wlzCOpkDYvt95UroUOd16GuBL18S1hFybk.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+</span></code></pre>
+<p>&#x8F38;&#x5165; yes &#x5F8C;&#x6309;&#x4E0B; enter&#xFF1A;</p>
+<pre><code class="lang-bash">
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-31-32-99 ~]$
+</code></pre>
+<p>&#x770B;&#x5230;&#x6B64;&#x756B;&#x9762;&#x4EE3;&#x8868;&#x9023;&#x7DDA;&#x6210;&#x529F;&#x3002;</p>
+<h2 id="&#x900F;&#x904E;-config-&#x8A2D;&#x5B9A;&#x4F86;&#x9023;&#x7DDA;">&#x900F;&#x904E; config &#x8A2D;&#x5B9A;&#x4F86;&#x9023;&#x7DDA;</h2>
+<p>&#x7DE8;&#x8F2F; <code>~/.ssh/config</code> &#x6A94;&#x6848;&#xFF0C;&#x4E26;&#x4E14;&#x8F38;&#x5165;&#x4EE5;&#x4E0B;&#x5167;&#x5BB9;&#xFF1A;</p>
+<pre><code>Host aws
+  HostName ec2-13-231-194-5.ap-northeast-1.compute.amazonaws.com
+  User ec2-user
+    IdentityFile ~/.ssh/aws.pem
+  ForwardAgent yes
+</code></pre><p>&#x5B58;&#x6A94;&#x5F8C;&#xFF0C;&#x53EF;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x6307;&#x4EE4;&#x4F86;&#x9023;&#x7DDA;&#xFF1A;</p>
+<pre><code class="lang-bash">ssh aws
+</code></pre>
+<p>&#x5176;&#x7D50;&#x679C;&#x76F8;&#x7576;&#x65BC;&#x4F7F;&#x7528;&#x76F4;&#x63A5;&#x9023;&#x7DDA;&#x7684;&#x6307;&#x4EE4;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="aws_create_instance.html" class="navigation navigation-prev " aria-label="Previous page: 建立 AWS EC2 執行個體">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="aws_install_node.html" class="navigation navigation-next " aria-label="Next page: 在 AWS EC2 上安裝 Node.js">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"設定 AWS EC2 的 SSH 連線","level":"1.5.3","depth":2,"next":{"title":"在 AWS EC2 上安裝 Node.js","level":"1.5.4","depth":2,"path":"aws/aws_install_node.md","ref":"aws/aws_install_node.md","articles":[]},"previous":{"title":"建立 AWS EC2 執行個體","level":"1.5.2","depth":2,"path":"aws/aws_create_instance.md","ref":"aws/aws_create_instance.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"aws/aws_setup_ssh.md","mtime":"2021-06-28T07:29:56.745Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-29T04:20:49.634Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
