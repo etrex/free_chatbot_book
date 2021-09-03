@@ -4,7 +4,7 @@
 
 ![圖 10](images/heroku_d54b5065648eaae89ea4dcddbb620acf5ad6c50bf693dc5648c663ec37d79927.png)
 
-點擊右上角 `Sign Up` 按鈕：
+請點擊右上角 `Sign Up` 按鈕：
 
 ![圖 11](images/heroku_13609c58c61aa647a2c0e8c078adb4312fe1572a8db2da92d307ff32e847faeb.png)
 
