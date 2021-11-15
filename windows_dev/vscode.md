@@ -4,7 +4,7 @@
 
 ![](../images/windows_dev/vscode/1.png)
 
-點擊 `Download for Windows` 按鈕：
+點擊 `Download for Windows` 下載安裝檔，下載完成後打開安裝檔：
 
 ![](../images/windows_dev/vscode/2.png)
 
