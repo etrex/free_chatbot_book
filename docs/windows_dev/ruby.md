@@ -1,4 +1,4 @@
-# 安裝 Ruby 2.7.4
+# 在 Windows 10 安裝 Ruby
 
 開啟網頁 [https://rubyinstaller.org/downloads/](https://rubyinstaller.org/downloads/)：
 

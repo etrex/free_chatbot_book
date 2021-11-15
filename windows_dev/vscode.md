@@ -1,4 +1,4 @@
-# 安裝 Visual Studio Code
+# 在 Windows 10 安裝 Visual Studio Code
 
 開啟網頁 [https://code.visualstudio.com/](https://code.visualstudio.com/)：
 
