@@ -1,0 +1,491 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>在 MacOS Catalina 安裝 Rails 開發環境 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="vscode.html" />
+    
+    
+    <link rel="prev" href="../windows_dev/postgresql.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    教材說明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../heroku.html">
+            
+                <a href="../heroku.html">
+            
+                    
+                    註冊 Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../github.html">
+            
+                <a href="../github.html">
+            
+                    
+                    註冊 GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../line_developer.html">
+            
+                <a href="../line_developer.html">
+            
+                    
+                    註冊 LINE 開發者帳號
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../windows_dev/windows_user.html">
+            
+                <a href="../windows_dev/windows_user.html">
+            
+                    
+                    在 Windows 10 安裝 Rails 開發環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../windows_dev/vscode.html">
+            
+                <a href="../windows_dev/vscode.html">
+            
+                    
+                    在 Windows 10 安裝 Visual Studio Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../windows_dev/ruby.html">
+            
+                <a href="../windows_dev/ruby.html">
+            
+                    
+                    在 Windows 10 安裝 Ruby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../windows_dev/rails.html">
+            
+                <a href="../windows_dev/rails.html">
+            
+                    
+                    在 Windows 10 安裝 Rails
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../windows_dev/git.html">
+            
+                <a href="../windows_dev/git.html">
+            
+                    
+                    在 Windows 10 安裝 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../windows_dev/sourcetree.html">
+            
+                <a href="../windows_dev/sourcetree.html">
+            
+                    
+                    在 Windows 10 安裝 Sourcetree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../windows_dev/postgresql.html">
+            
+                <a href="../windows_dev/postgresql.html">
+            
+                    
+                    在 Windows 10 安裝 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Rails 開發環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="vscode.html">
+            
+                <a href="vscode.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Visual Studio Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="brew.html">
+            
+                <a href="brew.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Brew
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="ruby.html">
+            
+                <a href="ruby.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Ruby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="rails.html">
+            
+                <a href="rails.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Rails
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="sourcetree.html">
+            
+                <a href="sourcetree.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Sourcetree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="postgresql.html">
+            
+                <a href="postgresql.html">
+            
+                    
+                    在 MacOS Catalina 安裝 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../windows_dev/download_repo.html">
+            
+                <a href="../windows_dev/download_repo.html">
+            
+                    
+                    透過 Sourcetree 下載 GitHub 專案程式碼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../windows_dev/upload_code.html">
+            
+                <a href="../windows_dev/upload_code.html">
+            
+                    
+                    透過 Sourcetree 上傳 GitHub 專案程式碼
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >在 MacOS Catalina 安裝 Rails 開發環境</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5728;-macos-catalina-&#x5B89;&#x88DD;-rails-&#x958B;&#x767C;&#x74B0;&#x5883;">&#x5728; MacOS Catalina &#x5B89;&#x88DD; Rails &#x958B;&#x767C;&#x74B0;&#x5883;</h1>
+<p>&#x4EE5;&#x4E0B;&#x5B89;&#x88DD;&#x7684;&#x8EDF;&#x9AD4;&#x6709;&#x76F8;&#x4F9D;&#x6027;&#xFF0C;&#x8ACB;&#x4F9D;&#x7167;&#x4EE5;&#x4E0B;&#x9806;&#x5E8F;&#x9032;&#x884C;&#x5B89;&#x88DD;&#xFF1A;</p>
+<ul>
+<li>Visual Studio Code</li>
+<li>Brew</li>
+<li>Ruby 2.7.4</li>
+<li>Rails 5.2.6</li>
+<li>Sourcetree</li>
+<li>PostgreSQL</li>
+</ul>
+<p>&#x5728; MacOS &#x4E0A;&#xFF0C;&#x5F88;&#x591A;&#x8DDF;&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x76F8;&#x95DC;&#x7684;&#x8EDF;&#x9AD4;&#x90FD;&#x662F;&#x900F;&#x904E;&#x5728;&#x7D42;&#x7AEF;&#x6A5F;&#x4E0B;&#x6307;&#x4EE4;&#x4F86;&#x5B89;&#x88DD;&#x3002;</p>
+<h1 id="&#x958B;&#x555F;&#x7D42;&#x7AEF;&#x6A5F;">&#x958B;&#x555F;&#x7D42;&#x7AEF;&#x6A5F;</h1>
+<p>&#x5728;&#x9078;&#x55AE;&#x5217;&#x53F3;&#x4E0A;&#x89D2;&#x9EDE;&#x64CA;&#x653E;&#x5927;&#x93E1;&#xFF0C;&#x6216;&#x6309;&#x4E0B;&#x9375;&#x76E4;&#x7684; <code>Command + &#x7A7A;&#x767D;&#x9375;</code> &#x53EB;&#x51FA; <a href="https://support.apple.com/zh-tw/guide/mac-help/mchlp1008/mac" target="_blank">Spotlight</a>&#xFF0C;&#x4E26;&#x8F38;&#x5165; <code>terminal</code>&#xFF1A;</p>
+<p><img src="../images/mac_dev/postgresql/20211116022930.png" alt="&#x5716; 31">  </p>
+<p>&#x6309;&#x4E0B; <code>Enter</code> &#x5373;&#x53EF;&#x958B;&#x555F;&#x7D42;&#x7AEF;&#x6A5F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../windows_dev/postgresql.html" class="navigation navigation-prev " aria-label="Previous page: 在 Windows 10 安裝 PostgreSQL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="vscode.html" class="navigation navigation-next " aria-label="Next page: 在 MacOS Catalina 安裝 Visual Studio Code">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"在 MacOS Catalina 安裝 Rails 開發環境","level":"1.12","depth":1,"next":{"title":"在 MacOS Catalina 安裝 Visual Studio Code","level":"1.13","depth":1,"path":"mac_dev/vscode.md","ref":"mac_dev/vscode.md","articles":[]},"previous":{"title":"在 Windows 10 安裝 PostgreSQL","level":"1.11","depth":1,"path":"windows_dev/postgresql.md","ref":"windows_dev/postgresql.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mac_dev/readme.md","mtime":"2021-11-15T18:47:59.883Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-15T19:28:52.610Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

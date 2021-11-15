@@ -1,0 +1,513 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>在 MacOS Catalina 安裝 Ruby · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rails.html" />
+    
+    
+    <link rel="prev" href="brew.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    教材說明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../heroku.html">
+            
+                <a href="../heroku.html">
+            
+                    
+                    註冊 Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../github.html">
+            
+                <a href="../github.html">
+            
+                    
+                    註冊 GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../line_developer.html">
+            
+                <a href="../line_developer.html">
+            
+                    
+                    註冊 LINE 開發者帳號
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../windows_dev/windows_user.html">
+            
+                <a href="../windows_dev/windows_user.html">
+            
+                    
+                    在 Windows 10 安裝 Rails 開發環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../windows_dev/vscode.html">
+            
+                <a href="../windows_dev/vscode.html">
+            
+                    
+                    在 Windows 10 安裝 Visual Studio Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../windows_dev/ruby.html">
+            
+                <a href="../windows_dev/ruby.html">
+            
+                    
+                    在 Windows 10 安裝 Ruby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../windows_dev/rails.html">
+            
+                <a href="../windows_dev/rails.html">
+            
+                    
+                    在 Windows 10 安裝 Rails
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../windows_dev/git.html">
+            
+                <a href="../windows_dev/git.html">
+            
+                    
+                    在 Windows 10 安裝 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../windows_dev/sourcetree.html">
+            
+                <a href="../windows_dev/sourcetree.html">
+            
+                    
+                    在 Windows 10 安裝 Sourcetree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../windows_dev/postgresql.html">
+            
+                <a href="../windows_dev/postgresql.html">
+            
+                    
+                    在 Windows 10 安裝 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Rails 開發環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="vscode.html">
+            
+                <a href="vscode.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Visual Studio Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="brew.html">
+            
+                <a href="brew.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Brew
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="ruby.html">
+            
+                <a href="ruby.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Ruby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="rails.html">
+            
+                <a href="rails.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Rails
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="sourcetree.html">
+            
+                <a href="sourcetree.html">
+            
+                    
+                    在 MacOS Catalina 安裝 Sourcetree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="postgresql.html">
+            
+                <a href="postgresql.html">
+            
+                    
+                    在 MacOS Catalina 安裝 PostgreSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../windows_dev/download_repo.html">
+            
+                <a href="../windows_dev/download_repo.html">
+            
+                    
+                    透過 Sourcetree 下載 GitHub 專案程式碼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../windows_dev/upload_code.html">
+            
+                <a href="../windows_dev/upload_code.html">
+            
+                    
+                    透過 Sourcetree 上傳 GitHub 專案程式碼
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >在 MacOS Catalina 安裝 Ruby</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5728;-macos-catalina-&#x5B89;&#x88DD;-ruby">&#x5728; MacOS Catalina &#x5B89;&#x88DD; Ruby</h1>
+<p>&#x4EE5;&#x4E0B;&#x6559;&#x5B78;&#x5C07;&#x4F7F;&#x7528; rbenv &#x4F5C;&#x70BA;&#x5B89;&#x88DD; ruby &#x7684;&#x5DE5;&#x5177;&#xFF0C;rbenv &#x662F;&#x4E00;&#x6B3E;&#x8B93;&#x4F60;&#x53EF;&#x4EE5;&#x5B89;&#x88DD;&#x591A;&#x500B; ruby &#x7248;&#x672C;&#xFF0C;&#x4E26;&#x4E14;&#x96A8;&#x610F;&#x5207;&#x63DB;&#x8981;&#x4F7F;&#x7528;&#x7684; ruby &#x7248;&#x672C;&#x7684;&#x5DE5;&#x5177;&#x3002;</p>
+<h1 id="&#x5B89;&#x88DD;-rbenv">&#x5B89;&#x88DD; rbenv</h1>
+<p>&#x5728;&#x7D42;&#x7AEF;&#x6A5F;&#x8F38;&#x5165; <code>brew install rbenv</code>&#xFF1A;</p>
+<p><img src="../images/mac_dev/ruby/20211116023145.png" alt="&#x5716; 43">  </p>
+<p>&#x6309;&#x4E0B; <code>Enter</code> &#x958B;&#x59CB;&#x5B89;&#x88DD;&#x3002;</p>
+<p><img src="../images/mac_dev/ruby/20211116023152.png" alt="&#x5716; 44">  </p>
+<h1 id="&#x78BA;&#x8A8D;-rbenv-&#x662F;&#x5426;&#x5B89;&#x88DD;&#x5B8C;&#x6210;">&#x78BA;&#x8A8D; rbenv &#x662F;&#x5426;&#x5B89;&#x88DD;&#x5B8C;&#x6210;</h1>
+<p>rbenv &#x5B89;&#x88DD;&#x5B8C;&#x6210;&#x5F8C;&#xFF0C;&#x8F38;&#x5165; <code>rbenv -v</code> &#x67E5;&#x770B;&#x7248;&#x672C;&#x3002;</p>
+<p><img src="../images/mac_dev/ruby/20211116023159.png" alt="&#x5716; 45">  </p>
+<h1 id="rbenv-&#x521D;&#x59CB;&#x5316;">rbenv &#x521D;&#x59CB;&#x5316;</h1>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x7684;&#x662F; zsh&#xFF0C;&#x5728;&#x7D42;&#x7AEF;&#x6A5F;&#x8F38;&#x5165;&#x4EE5;&#x4E0B;&#x6307;&#x4EE4;&#xFF1A;</p>
+<p><code>echo &apos;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&apos; &gt;&gt; ~/.zshrc</code>&#xFF1A;</p>
+<p><img src="../images/mac_dev/ruby/20211116023235.png" alt="&#x5716; 48">  </p>
+<p><code>echo &apos;eval &quot;$(rbenv init -)&quot;&apos; &gt;&gt; ~/.bashrc</code>&#xFF1A;</p>
+<p><img src="../images/mac_dev/ruby/20211116023241.png" alt="&#x5716; 49">  </p>
+<p>&#x8F38;&#x5165;&#x5B8C;&#x6210;&#x5F8C;&#x7684;&#x756B;&#x9762;&#xFF1A;</p>
+<p><img src="../images/mac_dev/ruby/20211116023249.png" alt="&#x5716; 50">  </p>
+<p>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x7684;&#x662F; bash&#xFF0C;&#x5728;&#x7D42;&#x7AEF;&#x6A5F;&#x8F38;&#x5165;&#x4EE5;&#x4E0B;&#x6307;&#x4EE4;&#xFF1A;</p>
+<ul>
+<li><code>echo &apos;export PATH=&quot;$HOME/.rbenv/bin:$PATH&quot;&apos; &gt;&gt; ~/.zshrc</code></li>
+<li><code>echo &apos;eval &quot;$(rbenv init -)&quot;&apos; &gt;&gt; ~/.bashrc</code></li>
+</ul>
+<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x77E5;&#x9053;&#x4F60;&#x7528;&#x7684;&#x7D42;&#x7AEF;&#x6A5F;&#x662F;&#x4EC0;&#x9EBC;&#xFF0C;&#x90A3;&#x5C31;&#x4EE5;&#x4E0A;&#x56DB;&#x500B;&#x6307;&#x4EE4;&#x90FD;&#x8F38;&#x5165;&#x4E00;&#x904D;&#x5C31;&#x5C0D;&#x4E86;&#x3002;</p>
+<h1 id="&#x4F7F;&#x7528;-rbenv-&#x5B89;&#x88DD;-ruby-274">&#x4F7F;&#x7528; rbenv &#x5B89;&#x88DD; ruby 2.7.4</h1>
+<p>&#x5728;&#x5B89;&#x88DD; ruby &#x4E4B;&#x524D;&#x9700;&#x8981;&#x95DC;&#x6389;&#x91CD;&#x958B;&#x7D42;&#x7AEF;&#x6A5F;&#x3002;</p>
+<p>&#x5728;&#x7D42;&#x7AEF;&#x6A5F;&#x8F38;&#x5165; <code>rbenv install 2.7.4</code>&#xFF1A;</p>
+<p><img src="../images/mac_dev/ruby/20211116023207.png" alt="&#x5716; 46">  </p>
+<p>&#x6309;&#x4E0B; <code>Enter</code>&#xFF1A;</p>
+<p><img src="../images/mac_dev/ruby/20211116023215.png" alt="&#x5716; 47">  </p>
+<p>ruby 2.7.4 &#x5B89;&#x88DD;&#x5B8C;&#x6210;&#x5F8C;&#xFF0C;&#x9084;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x9810;&#x8A2D;&#x4F7F;&#x7528;&#x7684; ruby &#x7248;&#x672C;&#x70BA; 2.7.4&#x3002;</p>
+<p>&#x5728;&#x7D42;&#x7AEF;&#x6A5F;&#x8F38;&#x5165; <code>rbenv global 2.7.4</code>&#xFF1A;</p>
+<p><img src="../images/mac_dev/ruby/20211116023339.png" alt="&#x5716; 52">  </p>
+<h1 id="&#x78BA;&#x8A8D;&#x662F;&#x5426;&#x5B89;&#x88DD;&#x5B8C;&#x6210;">&#x78BA;&#x8A8D;&#x662F;&#x5426;&#x5B89;&#x88DD;&#x5B8C;&#x6210;</h1>
+<p>&#x5728;&#x7D42;&#x7AEF;&#x6A5F;&#x8F38;&#x5165; <code>ruby -v</code>&#xFF1A;</p>
+<p><img src="../images/mac_dev/ruby/20211116023355.png" alt="&#x5716; 53">  </p>
+<p>&#x770B;&#x5230; <code>ruby 2.7.4...</code> &#x5C31;&#x4EE3;&#x8868;&#x5B89;&#x88DD;&#x5B8C;&#x6210;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="brew.html" class="navigation navigation-prev " aria-label="Previous page: 在 MacOS Catalina 安裝 Brew">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rails.html" class="navigation navigation-next " aria-label="Next page: 在 MacOS Catalina 安裝 Rails">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"在 MacOS Catalina 安裝 Ruby","level":"1.15","depth":1,"next":{"title":"在 MacOS Catalina 安裝 Rails","level":"1.16","depth":1,"path":"mac_dev/rails.md","ref":"mac_dev/rails.md","articles":[]},"previous":{"title":"在 MacOS Catalina 安裝 Brew","level":"1.14","depth":1,"path":"mac_dev/brew.md","ref":"mac_dev/brew.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"mac_dev/ruby.md","mtime":"2021-11-15T19:03:29.036Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-15T19:28:52.610Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
