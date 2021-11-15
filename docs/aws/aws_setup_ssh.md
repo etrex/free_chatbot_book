@@ -38,7 +38,7 @@ ssh -i 金鑰檔案路徑 用戶名稱@Host
 
 以下圖為例：
 
-![圖 20](../images/aws_setup_ssh_de3e58dce23a9b8a4876fbbb6b97dcb5523bffc78eb108cdacd85f27396beb17.png)
+![圖 20](../images/aws/setup_ssh/de3e58dce23a9b8a4876fbbb6b97dcb5523bffc78eb108cdacd85f27396beb17.png)
 
 可以看出我的 `公有 IPv4 DNS` 是 `ec2-13-231-194-5.ap-northeast-1.compute.amazonaws.com`。
 
