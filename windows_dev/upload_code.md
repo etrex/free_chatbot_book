@@ -21,3 +21,13 @@
 ![圖 13](../images/windows_dev/upload_code/e580db69e7b334e0f700f3bff07434a63cf561efe9c9faf52bf317a7ccadfd14.png)  
 
 點擊右下角 `Commit` 將本次變更保存到 Git 並同時上傳到 GitHub：
+
+![圖 14](../images/windows_dev/upload_code/41efafd1fdfb0493b006d0ed6089f5bceae95896e014c55819c8708aa2f28759.png)  
+
+至此就完成了上傳專案程式碼。
+
+# 確認是否上傳成功
+
+開啟 GitHub 網頁的專案頁面，可以看到最近一次更新是在 40 秒前：
+
+![圖 15](../images/windows_dev/upload_code/c79c8cbc5581d715166b784548bdd69aba8475be2cfb67e4d858c705a6f7ef8f.png)  
