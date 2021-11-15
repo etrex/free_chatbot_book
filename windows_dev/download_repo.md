@@ -1,6 +1,6 @@
-# 下載專案程式碼
+# 透過 Sourcetree 下載 GitHub 專案程式碼
 
-透過 Sourcetree 下載專案程式碼到本機電腦的操作流程如下：
+透過 Sourcetree 下載 GitHub 專案程式碼到本機電腦的操作流程如下：
 
 首先開啟 Sourcetree，開啟 Remote 分頁，若已連結 GitHub 帳號，則可以看見所有專案列表，或者你可以搜尋專案名稱找到你想要下載的專案：
 

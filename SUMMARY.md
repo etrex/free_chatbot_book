@@ -11,3 +11,5 @@
 * [在 Windows 10 安裝 Git](windows_dev/git.md)
 * [在 Windows 10 安裝 Sourcetree](windows_dev/sourcetree.md)
 * [在 Windows 10 安裝 PostgreSQL](windows_dev/postgresql.md)
+* [透過 Sourcetree 下載 GitHub 專案程式碼](windows_dev/download_repo.md)
+* [透過 Sourcetree 上傳 GitHub 專案程式碼](windows_dev/upload_code.md)
