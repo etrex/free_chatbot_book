@@ -26,7 +26,7 @@ rbenv 安裝完成後，輸入 `rbenv -v` 查看版本。
 
 ![圖 48](../images/mac_dev/ruby/20211116023235.png)  
 
-`echo 'eval "$(rbenv init -)"' >> ~/.bashrc`：
+`echo 'eval "$(rbenv init -)"' >> ~/.zshrc`：
 
 ![圖 49](../images/mac_dev/ruby/20211116023241.png)  
 
@@ -36,7 +36,7 @@ rbenv 安裝完成後，輸入 `rbenv -v` 查看版本。
 
 如果你使用的是 bash，在終端機輸入以下指令：
 
-- `echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc`
+- `echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc`
 - `echo 'eval "$(rbenv init -)"' >> ~/.bashrc`
 
 如果你不知道你用的終端機是什麼，那就以上四個指令都輸入一遍就對了。
